@@ -34,3 +34,5 @@ console.log(typeof [1, 2, 3]);         // object → Reference: Array (typeof sa
 console.log(typeof function() {});     // function → Reference: Function
 
 
+
+
