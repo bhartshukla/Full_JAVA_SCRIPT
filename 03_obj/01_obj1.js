@@ -1,8 +1,8 @@
 //singleTon 
-// Object.create 
+// Object.create    // constructor method
 //Object literal
 
-const mySymbol=Symbol("Key1")
+
 
 const user = {
     name:"BHarat",
@@ -14,6 +14,7 @@ const user = {
     islooking:true,
     skills:["HTML","CSS","JavaScript"]
 }
+const mySymbol=Symbol("Key1")
 
 console.log(user.name)
 
