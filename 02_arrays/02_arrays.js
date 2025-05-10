@@ -25,7 +25,7 @@ console.log(allplayers);
 const ano1 = [1, 2, 3, 4, [5, 6, 7], 8, [2, 4, [5, 6]]];
 
 // Flattening all levels using flat(Infinity)
-const ano12 = ano1.flat(Infinity); 
+const ano12 = ano1.flat(Infinity);  // here we can give the value of flat ..
 console.log(ano12); 
 // [1, 2, 3, 4, 5, 6, 7, 8, 2, 4, 5, 6]
 
