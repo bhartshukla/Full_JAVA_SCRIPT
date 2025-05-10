@@ -1,5 +1,6 @@
 // Array Declaration
 let myarray = [1, 2, 3, 4];  
+console.log(myarray[0])
 // When copied, arrays in JavaScript create *shallow copies*
 
 const myfriends = ["you", "he", "she", "they"];
