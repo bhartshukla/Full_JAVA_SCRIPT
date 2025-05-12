@@ -39,10 +39,33 @@ const obj4 = {...obj1, ...obj2}
 // console.log(obj3)
 // console.log(obj4)
 
-console.log(userdetails1)
-console.log(Object.keys(userdetails1))  // its dataType is array
-console.log(Object.values(userdetails1))  // its dataType is array
-console.log(Object.entries(userdetails1))  // its dataType is array
+// console.log(userdetails1)
+// console.log(Object.keys(userdetails1))  // its dataType is array
+// console.log(Object.values(userdetails1))  // its dataType is array
+// console.log(Object.entries(userdetails1))  // its dataType is array
 
-console.log(userdetails1.hasOwnProperty('name'))
-console.log(userdetails1.hasOwnProperty('fullname'))
+// console.log(userdetails1.hasOwnProperty('name'))
+// console.log(userdetails1.hasOwnProperty('fullname'))
+
+
+const course = {
+    cname:"Javascript",
+    duration:"12weeks",
+    price:"9999",
+}
+
+const {price} = course
+
+console.log(price)
+
+//JSON
+// {
+//     "name":"BHARAT",
+//     "wow":"me"
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
