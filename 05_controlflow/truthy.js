@@ -30,5 +30,26 @@ false == "" //true
 
 */
 
+
+
+
 // Nullish Coalescing Operator (??): null , undefined 
 
+let val1 ;
+
+// val1 = 5 ??10;   // value =5
+// val1 = null ?? 10  //value = 10
+ 
+// val1 = undefined ?? 15  //15
+
+// val1 = null ?? 10 ?? 15    // value 10
+
+
+console.log(val1)
+
+// terniary Operator
+// condition ? true : false
+
+const p = 200;
+
+p>10 ? console.log("more then 10") : console.log("less then 10")
