@@ -53,3 +53,5 @@ console.log(val1)
 const p = 200;
 
 p>10 ? console.log("more then 10") : console.log("less then 10")
+
+
