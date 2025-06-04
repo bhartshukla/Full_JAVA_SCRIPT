@@ -8,6 +8,7 @@ for (let i = 1; i <= 10; i++) {
    // console.log(element)
 }
 
+// console.log(i) // its not print 
 
 for(let i =0; i<=10; i++){
     // console.log(`outer loop : ${i}`);
