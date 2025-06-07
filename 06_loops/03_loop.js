@@ -11,5 +11,35 @@ for(const num of arr){
 
 const greeting = "hellow Bharat"
 for(const greet of greeting){
-    console.log(`each char is ${greet}`)
+    // console.log(`each char is ${greet}`)
 }
+
+// maps 
+ const map = new Map()
+ map.set('In',"India")
+ map.set('In',"India") // its not again print
+ map.set('USA',"United states of America")
+ map.set('Fr',"france")
+
+//  console.log(map);
+
+
+ for(const key of map){
+    // console.log(key);
+ }
+
+  for(const [key, value ]of map){
+    // console.log(key , ":-" , value);
+ }
+
+const myObject = {
+    id : "123",
+    name : "Bharat",
+    sn:"Shukla",
+    no:"222222"
+} 
+
+// for(const obj of myObject){  //its not  myObject is not iterable with this loop FOR
+//     console.log(obj)
+// }
+
