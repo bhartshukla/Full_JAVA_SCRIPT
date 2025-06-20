@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>this is event listeners</h1>
+    <h3>Hii i am Bharat shukla</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, illo.</p>
+    
+    <button>
+        click Me !
+    </button>
+
+
+
+    <script>
+
+        let btn = document.querySelector('button')
+        let h1 = document.querySelector('h1')
+        let h3 = document.querySelector('h3')
+        let p = document.querySelector('p')
+        btn.addEventListener("click", function(){
+            console.log(this)
+            console.dir(this)
+
+            console.log(this.innerText)
+
+            this.style.backgroundColor = ' red'
+        })
+
+
+        h1.addEventListener("click", function(){
+            
+
+            console.dir(this.innerText)
+
+            this.style.backgroundColor = ' red'
+        })
+
+
+        h3.addEventListener("click", function(){
+            
+
+            console.dir(this.innerText)
+
+            this.style.backgroundColor = ' red'
+        })
+
+
+        p.addEventListener("click", function(){
+            
+
+            console.dir(this.innerText)
+
+            this.style.backgroundColor = ' red'
+        })
+
+
+    </script>
+
+</body>
+</html>
