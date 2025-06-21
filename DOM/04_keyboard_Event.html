@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" placeholder="helo">
+    
+    <button>
+        clickme
+    </button>
+
+
+
+    <script>
+
+        let btn = document.querySelector('button')
+        btn.addEventListener("click", function(event){
+            console.log(event)
+            alert("Btn clicked ")
+        })
+
+        // let input = document.querySelector('input')
+        // input.addEventListener("keydown", function(){
+        //     console.log("Key was pressed")
+        // })
+
+         let input = document.querySelector('input')
+        input.addEventListener("keyup", function(event){
+            console.log(event)
+            console.log(event.key)
+            console.log(event.code)
+            console.log("Key was released")
+        })
+
+    </script>
+</body>
+</html>
