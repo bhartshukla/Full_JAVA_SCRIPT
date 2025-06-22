@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action">
+        <input type="text" placeholder="Enter your Name " id="user"   >
+        <input type="password" placeholder="Enter your password " id="pass">
+        <input type="text" placeholder="course"  id="cr">
+        <button>
+            submit
+        </button>
+    </form>
+
+
+    <script>
+        let form = document.querySelector("form")
+
+        form.addEventListener("submit", function(event){
+            event.preventDefault();
+            alert("Form Submitted")
+
+            // let user = document.querySelector("#user")
+            // let password = document.querySelector("#pass")
+            // let course = document.querySelector("#cr")
+
+            let user = this.elements[0]  //form.elements.this
+            let password = this.elements[1]
+            let course = this.elements[2]
+
+            console.log(user.value)
+            console.log(password.value)
+            console.log(course.value)
+
+            alert(`hii ${user.value}, your password is ${password.value}, and your course is ${course.value}`)
+
+        })
+
+
+        
+
+    </script>
+</body>
+</html>
