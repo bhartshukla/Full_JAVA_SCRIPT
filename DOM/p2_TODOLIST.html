@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+
+       
+        .todobox{
+            height: 400px;
+            width: 400px;
+            background: #c0c0c0;
+            color: #000000;
+            border: 2ps xolid balck;
+            margin: auto;
+            text-align: center;
+        }
+
+
+    </style>
+<body>
+
+    <div class="todobox">
+        <h1>Hello its our Todo List project</h1>
+
+        <input type="text" placeholder="Enter Your task">
+
+        <button>
+            add
+        </button>
+
+        <ul>
+            <li>
+            
+            </li>
+        </ul>
+
+    </div>
+
+    
+    <script>
+        let task = document.querySelector("input")
+        let btn = document.querySelector("button")
+        let addedTask  = document.querySelector("ul")
+
+        btn.addEventListener("click", function(){
+            let item = document.createElement('li')
+            item.innerText=task.value
+
+
+            let deletbtn = document.createElement("button")
+            deletbtn.innerText = "Delete"
+            deletbtn.classList.add("delete");
+
+            item.appendChild(deletbtn)
+
+           
+
+            addedTask.appendChild(item)
+            task.value=""
+        })
+
+        let btns = document.querySelectorAll(".delete")
+
+        for(btn of btns){
+            btn.addEventListener("click",function(){
+                let per = this.parentElement;
+
+              per.remove();
+             })
+        }
+      
+
+    </script>
+
+
+</body>
+</html>
