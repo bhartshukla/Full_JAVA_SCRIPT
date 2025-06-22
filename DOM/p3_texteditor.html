@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My text editor</h1>
+    <p></p>
+
+    <input type="text" placeholder="type somthings" id="inp">
+
+    <script>
+        let inp = document.querySelector("#inp")
+        let p = document.querySelector("p")
+
+        inp.addEventListener("input",function(){
+            console.log(inp.value)
+            p.innerText = inp.value
+        })
+    </script>
+</body>
+</html>
