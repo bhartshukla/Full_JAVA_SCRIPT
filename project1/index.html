@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMON</title>
+</head>
+
+<style>
+    body{
+        text-align: center;
+    }
+
+    .boxbtn{
+        height: 300px;
+        width: 300px;
+        border: 2px solid red;
+        margin: auto;
+        display: flex;
+        /* gap: 10px; */
+        padding: 3px;
+        flex-wrap: wrap;
+    }
+    .btn1{
+        margin:  auto;
+        height: 100px;
+        width: 100px;
+        border: 1px solid red;
+        border-radius: 20px;
+    }
+    .red{
+        background-color: red;
+    }
+    .green{
+        background-color: green;
+    }
+    .yellow{
+        background-color: yellow;
+    }
+    .blue{
+        background-color: blue;
+    }
+    .flash{
+        background-color: #f9d9d9;
+    }
+</style>
+
+<body>
+
+    <h1>Simon says game </h1>
+
+    <h2>press any key to start</h2>
+
+    <div class="boxbtn">
+        <div class="btn1 red">1</div>
+        <div class="btn1 green">2</div>
+        <div class="btn1 yellow">3</div>
+        <div class="btn1 blue">4</div>
+    </div>
+
+    <h3>your highest score is </h3>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
