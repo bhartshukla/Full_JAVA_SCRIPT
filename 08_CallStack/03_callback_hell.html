@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>Hello Bharat</h1>
+    <script>
+
+
+        let h1 = document.querySelector('h1')
+
+         
+        // setTimeout(()=>{
+        //       h1.style.color = 'red'
+        // },2000)
+
+         
+        // setTimeout(()=>{
+        //       h1.style.color = 'green'
+        // },3000)
+
+        // setTimeout(()=>{
+        //       h1.style.color = 'blue'
+        // },4000)
+
+
+        function changecolor(color, delay, chnagecolornext ){
+            setTimeout( ()=>{
+                h1.style.color = color;
+                if(chnagecolornext)chnagecolornext();
+            }, delay);
+
+
+        }
+
+        changecolor('red', 1000,()=>{
+            changecolor("orange", 1000,()=>{
+                changecolor("green", 1000)
+            })
+        })
+
+        //callbacks nesting --> callBack hell
+
+        
+        
+      
+    </script>
+</body>
+
+</html>
