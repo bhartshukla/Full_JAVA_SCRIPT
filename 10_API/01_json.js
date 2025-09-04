@@ -1,23 +1,45 @@
-let jsonres = '{"fact":"Female felines are superfecund","length":31}';
+//  API == APPLICATION PROGRAMMING INTERFACE
 
-// console.log(jsonres);
+//JSON JAVASCRIPT OBJECT NOTATION
 
-let validres = JSON.parse(jsonres)  // json to js object
+// Accesssing data from json\
 
-console.log(validres)
+// JSON.parse(data)  to parse a string data into a js object
 
-console.log(validres.fact)
+// JSON string (note the quotes around the whole object)
+let jsonData = `
+{
+  "name": "Bharat",
+  "city": "Lucknow",
+  "profession": "Web Developer",
+  "language": "English"
+}`;
+
+// Parse JSON string into JavaScript object
+let validRes = JSON.parse(jsonData);
+console.log(validRes)
+console.log(validRes.city)
+
+/*
 
 
-let me = {
-    name:"Bharat",
-    class:5,
-    enroll:"ABCA",
-    subject:"CS"
+{
+  "name": "Bharat",
+  "city": "Lucknow",
+  "profession": "Web Developer",
+  "language": "English"
 }
 
-console.log(me)
+*/
 
-let jsondata = JSON.stringify(me)
+//JSON.stringify(json) to parse a js object data into json
 
-console.log(jsondata)
+let jsobj = {
+  "name": "Bharat",
+  "city": "Lucknow",
+  "profession": "Web Developer",
+  "language": "English"
+}
+
+let jsondata= JSON.stringify(jsobj)
+console.log(jsonData)
