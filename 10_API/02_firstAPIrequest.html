@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let url= "https://uselessfacts.jsph.pl/random.json";
+
+        /*
+        fetch(url)
+        .then((res)=>{
+            console.log(res)
+            // console.log(res.json())  //access the data
+           return res.json()
+        })
+        .then((data)=>{
+            console.log("data 1 = " + data.text)
+            return fetch(url);
+        })
+        .then((res)=>{
+             return res.json()
+  
+        })
+        .then((data)=>{
+            console.log("data 2 = " + data.id)
+  
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+  
+        */
+
+        let url = "https://uselessfacts.jsph.pl/random.json";
+
+        async function gettext() {
+
+            try {
+                let text = await fetch(url)
+
+                let vtext = await text.json();
+                let textor = vtext.text
+                console.log(textor)
+
+            }
+            catch {
+                console.log("ERROR")
+            }
+
+            console.log("BYE")
+
+        }
+
+        gettext()
+    </script>
+</body>
+
+</html>
