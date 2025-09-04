@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <h1>some facts</h1>
+
+    <button id="fact">get fact</button>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
+    <script>
+      let url = "https://uselessfacts.jsph.pl/random.json";
+
+      let h1 = document.querySelector('h1')
+      let  button = document.querySelector('button')
+
+      async function gettext() {
+        try {
+          let text = await axios.get(url);
+          button.addEventListener("click", ()=>{
+            h1.innerText = text.data.text
+          })
+          console.log(text.data.text);
+        } catch (e) {
+          console.log("Error");
+        }
+      }
+
+      gettext();
+
+    </script>
+  </body>
+</html>
