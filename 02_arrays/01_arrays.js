@@ -52,3 +52,5 @@ console.log("B", myn1);     // [1, 2]
 const myn12 = newarry1.splice(1, 3);
 console.log("C", newarry1); // modified array → [5, 4]
 console.log("C", myn12);    // removed elements → [1, 2, 3]
+
+console.log("done")
